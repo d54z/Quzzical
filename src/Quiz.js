@@ -6,7 +6,13 @@ export default function Quiz(props){
 
     function answerStatus(answer){
         console.log(props.selcted)
-        return props.selcted === answer && "selcted"
+        if(props.selcted === answer){
+            return "selcted"
+        } if (props.isCheck && answer === props.correct_answer){
+            return "right"
+        } else if (props.isCheck === true) {
+            return "wrong"
+        }
     }
     return(
             <div className='Question'> 

@@ -148,3 +148,11 @@ line-height: 19px;
 .Answerselcted{
     background-color: #D6DBF5;
 }
+
+.Answerright{
+    background-color: #94D7A2;
+}
+
+.Answerwrong{
+    background-color: #F8BCBC;
+}

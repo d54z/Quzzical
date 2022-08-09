@@ -51,7 +51,7 @@ function handleCheck(event) {
         text = `Your scored ${score} / 5`
         return score
     }
-    const quizArray = Questions.map((x,index) => <Quiz Itemindex={index} selcted = {x.selcted} Question = {x.question} answers={x.shuffled_answers} setSelcted= {handleSelect}/>)
+    const quizArray = Questions.map((x,index) => <Quiz correct_answer = {x.correct_answer} Itemindex={index} selcted = {x.selcted} Question = {x.question} answers={x.shuffled_answers} setSelcted= {handleSelect} isCheck = {isCheck}/>)
 
     return(
         <div className='Container'>
