@@ -1,0 +1,150 @@
+.Container{
+    width: 550px;
+    height: 550px;
+    margin-left: 25%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 10px 15px rgba(0,0,0,0.8);
+    background-color: #f5f7fb;
+    background-image: url('./images/blobs.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    overflow-x: auto;
+
+}
+
+.HelloInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin:auto;
+    padding-top:200px;
+    
+}
+
+.HelloInfo > button{
+    width: 195px;
+    height: 52px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+color:#f5f7fB;
+background: #4D5B9E;
+border-radius: 15px;
+margin-left: 40px;
+cursor: pointer;
+}
+.HelloInfo > button:focus {
+    outline: none;
+  }
+  
+  .HelloInfo > button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+  }
+  
+
+.HelloInfo > h1 {
+    font-family: 'Karla';
+font-style: normal;
+font-weight: 700;
+font-size: 31.25px;
+line-height: 37px;
+text-align: center;
+padding:0;
+margin: 0;
+color: #293264;
+
+}
+
+.HelloInfo >p {
+    font-family: 'Karla';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #293264;
+}
+
+
+/* start styling game component */
+
+.Question{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:15px;
+}
+.Question > h1 {
+    grid-column: 1/-1;
+    font-family: 'Karla';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+}
+.Question > div{
+    width:75px;
+    height:25px;
+    border: solid #4D5B9E 1px;
+    border-radius: 10px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   color: #293264;
+}
+.Game{
+
+    padding-left: 40px;
+    padding-top:15px;
+}
+
+.Question > div:focus{
+    outline: none;
+}
+.Question > div:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.checkAnswers{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    justify-content:center ;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    cursor: pointer;
+    margin-left: 31.2%;
+    background-color: #A626D3;
+    color: #fff;
+    font-family: 'Karla';
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.checkAnswers:focus{
+    outline: none;
+}
+.checkAnswers:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.Answerselcted{
+    background-color: #D6DBF5;
+}
